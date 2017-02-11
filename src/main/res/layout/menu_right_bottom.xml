@@ -1,0 +1,37 @@
+<com.ramo.view.ArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arcmenu="http://schemas.android.com/apk/com.ramo.file_transfer"
+    android:id="@+id/mArcMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    arcmenu:position="center"
+    arcmenu:radius="100dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_button">
+
+        <ImageView
+            android:id="@+id/id_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/composer_icn_plus" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/composer_radar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/composer_hot" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/composer_radar2" />
+
+</com.ramo.view.ArcMenu>

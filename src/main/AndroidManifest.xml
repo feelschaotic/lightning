@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramo.file_transfer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--获取通讯录-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+
+    <application
+        android:name="com.ramo.application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.ramo.activity.MainActivity_"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ramo.activity.RadarAndSweepActivtiy_">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+        </activity>
+        <activity android:name="com.ramo.activity.EditHeadAndNameActivity_" />
+        <activity android:name="com.ramo.activity.HistoricalRecordActivity_" />
+        <activity android:name="com.ramo.activity.ConnectStateActivity_" />
+        <activity android:name="com.ramo.activity.PCDirActivity_" />
+        <activity android:name="com.ramo.activity.ChooseGroupActivity_" />
+        <activity android:name="com.ramo.activity.WebServiceActivity_" />
+        <activity
+            android:name="com.ramo.activity.VoiceActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name="com.ramo.activity.WiFiDirectActivity_">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <fragment android:name="com.ramo.fragment.AllFileClassificationFragment_" />
+        <fragment android:name="com.ramo.fragment.AllAppFragment_" />
+        <fragment android:name="com.ramo.fragment.AllAudioFragment_" />
+        <fragment android:name="com.ramo.fragment.AllImgFragment_" />
+        <fragment android:name="com.ramo.fragment.AllVideoFragment_" />
+        <fragment android:name="com.ramo.fragment.QrSweepFragment_" />
+        <fragment android:name="com.ramo.fragment.RadarFragment_" />
+        <fragment android:name="com.ramo.fragment.SoundFragment_" />
+
+        <service android:name="com.ramo.service.SendingFilesService" />
+        <service android:name="com.ramo.service.DataTransferService" />
+        <service android:name="com.ramo.service.FileTransferService" />
+        <service android:name="com.ramo.service.ClipboardService" />
+
+        <receiver android:name="com.ramo.receiver.WiFiDirectReceiver" />
+
+        <!-- 移动统计分析 -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'578d986b'" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="lightNing" />
+    </application>
+
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/send_all_img_detail_rl"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/send_images_folder_icon" />
+
+        <ImageView
+            android:id="@+id/folder_first_img"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sidebar_head_aoteman" />
+
+        <TextView
+            android:id="@+id/send_all_img_detail_fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:maxLines="2"
+            android:text="文件名"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/send_all_img_detail_fileNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/send_all_img_detail_fileName"
+            android:text="(0)" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/send_all_img_check_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_check_off"
+        android:textColor="@android:color/black" />
+
+    <View style="@style/hr"></View>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="topBar">
+        <attr name="topTitle" format="string"></attr>
+        <attr name="titleSize" format="dimension"></attr>
+        <attr name="titleTextColor" format="color"></attr>
+        <attr name="leftTextColor" format="color"></attr>
+        <attr name="leftText" format="string"></attr>
+        <attr name="leftBG" format="reference|color"></attr>
+        <attr name="rightText" format="string"></attr>
+        <attr name="rightBG" format="reference|color"></attr>
+        <attr name="rightTextColor" format="color"></attr>
+        <attr name="BG" format="reference|color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="position" format="string"/>
+        <attr name="radius" format="string"/>
+    </declare-styleable>
+</resources>

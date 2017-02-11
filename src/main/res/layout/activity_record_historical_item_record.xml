@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historical_record_details_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chatto_bg_normal">
+
+    <TextView
+        android:id="@+id/record_receiverName"
+        style="@style/historical_record_content"
+        android:layout_alignParentTop="true"
+        android:text="发送给：--" />
+
+    <ImageView
+        android:id="@+id/record_fileImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/record_receiverName"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/record_file_name"
+        style="@style/historical_record_content"
+        android:layout_below="@id/record_receiverName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/record_fileImg"
+        android:text="--" />
+
+    <RelativeLayout
+        android:id="@+id/record_rl"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_file_name"
+        android:layout_toRightOf="@id/record_fileImg">
+
+        <TextView
+            android:id="@+id/record_file_size"
+            style="@style/historical_record_small_text"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/record_file_state"
+            style="@style/historical_record_small_text"
+            android:layout_alignParentRight="true"
+            android:text="等待中"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/record_rl"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/record_fileImg"
+        android:progressDrawable="@drawable/progress_bar_horizontal_style" />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_below="@id/record_file_name"
+        android:layout_margin="5dp"
+        android:id="@+id/record_handle_btn"
+        android:layout_toRightOf="@id/progressBar"
+        android:src="@drawable/download_pause" />
+</RelativeLayout>

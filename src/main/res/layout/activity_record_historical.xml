@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.ramo.view.TopBar
+        android:id="@+id/top_bar"
+        style="@style/topbar_style"
+        topbar:leftBG="@drawable/topbar_left_bg"
+        topbar:rightBG="@drawable/historical_record_topbar_clean">
+
+        <TextView
+            style="@style/topbar_text"
+            android:text="传输纪录" />
+    </com.ramo.view.TopBar>
+
+    <ListView
+        android:id="@+id/historical_record_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_bar"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:listSelector="#00000000"
+        android:transcriptMode="alwaysScroll"></ListView>
+    <include
+        layout="@layout/history_record_empty"
+        android:id="@+id/history_record_empty_lv"></include>
+</RelativeLayout>

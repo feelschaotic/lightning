@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    style="@style/current_skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ramo.view.TopBar
+        style="@style/topbar_style"
+        topbar:BG="@android:color/transparent"
+        topbar:leftBG="@drawable/topbar_left_bg">
+
+        <TextView
+            android:id="@+id/connect_manager_pc"
+            style="@style/topbar_text"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_topbar_tv_shape_white"
+            android:text="管理电脑"
+            android:textSize="13sp" />
+    </com.ramo.view.TopBar>
+
+    <TextView
+        android:id="@+id/connect_state"
+        style="@style/wrapAndWhite"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="连接成功"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.ramo.view.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sidebar_head_superman" />
+
+        <TextView
+            android:id="@+id/connect_junior_name"
+            style="@style/wrapAndWhite"
+            android:layout_marginBottom="8dp"
+            android:text="connect_junior_name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:id="@+id/connect_anim_LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.ramo.view.CircleImageView
+                android:id="@+id/connect_userhead"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sidebar_head_juren" />
+
+            <ImageView
+                android:id="@+id/connect_red_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15dp"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/connect_userhead"
+                android:src="@drawable/red_tip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/connect_my_name"
+            style="@style/wrapAndWhite"
+            android:text="connect_my_name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connect_send_files_btn"
+            style="@style/wrapAndWhite"
+            android:layout_height="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/main_topbar_tv_shape_white"
+            android:text="发送文件" />
+
+        <Button
+            android:id="@+id/connect_disconnect_btn"
+            style="@style/wrapAndWhite"
+            android:layout_height="35dp"
+            android:background="@drawable/main_topbar_tv_shape_white"
+            android:text="断开连接" />
+    </LinearLayout>
+</LinearLayout>

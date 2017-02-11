@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_gravity="left"
+    android:background="@color/transparentBlack"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_nav_user_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ramo.view.CircleImageView
+            android:id="@+id/left_nav_head"
+            style="@style/leftNavHead"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sidebar_head_superman" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/left_menu_lv"
+        style="@style/listview_base">
+
+    </ListView>
+
+</LinearLayout>

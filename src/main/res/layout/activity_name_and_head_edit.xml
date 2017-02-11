@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <com.ramo.view.TopBar
+        android:id="@+id/top_bar"
+        style="@style/topbar_style"
+        topbar:leftBG="@drawable/topbar_left_bg"
+        topbar:rightText="完成">
+
+        <TextView
+            style="@style/topbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改头像和昵称"
+            android:textColor="#FFFFFF" />
+
+    </com.ramo.view.TopBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/edit_name_and_head_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <com.ramo.view.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/edit_head"
+                android:src="@drawable/sidebar_head_superman" />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/text_shape_black"
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/edit_name_and_head_tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_name_and_head_ll"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="7dp">
+
+            <TableRow>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_huluwa" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_aoteman" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_yaoming" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_dahuangfeng" />
+                </TabWidget>
+            </TableRow>
+
+            <TableRow>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_shejing" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_captain" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_sunwukong" />
+                </TabWidget>
+
+                <TabWidget android:layout_margin="5dp">
+                    <com.ramo.view.CircleImageView
+                        style="@style/edit_head_candidate_iv"
+                        android:src="@drawable/sidebar_head_qingtianzhu" />
+                </TabWidget>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/edit_name_and_head_tl"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/edit_name_head_camera_btn"
+                android:background="@drawable/btn_circular_black"
+                android:text="拍照" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/edit_name_head_albums_btn"
+                android:background="@drawable/btn_circular_black"
+                android:text="从相册中选择" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Label">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Label.Shadow" parent="@style/Label">
+        <item name="android:shadowColor">#88000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.5</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- topbar样式 -->
+    <style name="topbar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">7dp</item>
+    </style>
+    <!-- topbar文字样式 -->
+    <style name="topbar_text" parent="wrap">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- topbar 小文字样式 -->
+    <style name="topbar_small_text" parent="wrap">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <!-- 细竖线 -->
+    <style name="line_h">
+        <item name="android:background">#ffcdcdcd</item>
+        <item name="android:layout_width">0.5dip</item>
+        <item name="android:layout_height">100dip</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+    </style>
+    <!--横线-->
+    <style name="hr">
+        <item name="android:background">#ffcdcdcd</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="current_skin">
+        <item name="android:background">#6CC5FD</item>
+    </style>
+
+
+    <!-- 雷达和扫码 topbar 文字样式 -->
+    <style name="radar_and_sweep_topbar_text" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="edit_head_candidate_iv">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">58dp</item>
+    </style>
+
+
+    <!---->
+    <style name="historical_record_date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">#bebebe</item>
+        <item name="android:textColor">#f5f5f5</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingRight">4px</item>
+        <item name="android:paddingBottom">2px</item>
+        <item name="android:paddingTop">2px</item>
+    </style>
+
+    <style name="historical_record_content" parent="wrap">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="historical_record_small_text" parent="historical_record_content">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="wrapAndWhite" parent="wrap">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="listview_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="sound_bottom_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_shape_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="mediumTv_white" parent="wrapAndWhite">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="largeTv_white" parent="wrapAndWhite">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="smallTv_white" parent="wrapAndWhite">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="leftNavHead">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+</resources>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/sound_anim_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sound_jump_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sound_listening"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sound_waves" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sound_message"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_gray"
+            android:gravity="top"
+            android:hint="@string/sound_hint_text"
+            android:inputType="textMultiLine" />
+
+        <ImageView
+            android:id="@+id/sound_send_iv"
+            android:layout_margin="20dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:background="@drawable/btn_shape_gray"
+            android:src="@drawable/sidebar_head_aoteman"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageButton
+                android:id="@+id/uploadFile_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_selector2"
+                android:src="@drawable/sound_file_selector" />
+
+            <ImageButton
+                android:id="@+id/sound_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_selector2"
+                android:src="@drawable/sound_send_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sound_bottom_choose_file"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-300dp"
+        android:background="@drawable/linearlayout_shape"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/sound_send_camera"
+            style="@style/sound_bottom_tv"
+            android:text="拍照" />
+
+        <TextView
+            android:id="@+id/sound_send_img"
+            style="@style/sound_bottom_tv"
+            android:text="相册" />
+
+        <TextView
+            android:id="@+id/sound_send_text"
+            style="@style/sound_bottom_tv"
+            android:text="文字" />
+
+        <TextView
+            android:id="@+id/sound_send_url"
+            style="@style/sound_bottom_tv"
+            android:text="链接" />
+
+        <TextView
+            android:id="@+id/sound_cancel_btn"
+            style="@style/sound_bottom_tv"
+            android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

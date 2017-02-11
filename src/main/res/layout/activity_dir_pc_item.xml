@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/pc_dir_item_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/x_ic_folde_document" />
+
+    <TextView
+        android:id="@+id/pc_dir_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ye10.mp3"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+</LinearLayout>

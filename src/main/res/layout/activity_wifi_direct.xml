@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WI-FI DIRECT TEST" />
+
+    <Button
+        android:id="@+id/discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main"
+        android:text="发现设备" />
+
+    <Button
+        android:id="@+id/stopdiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discover"
+        android:text="停止发现设备" />
+
+    <Button
+        android:id="@+id/sendpicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/discover"
+        android:text="发送图片" />
+
+    <Button
+        android:id="@+id/begrouppwener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_toRightOf="@+id/stopconnect"
+        android:text="成为组所有者" />
+
+    <Button
+        android:id="@+id/senddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_toRightOf="@+id/stopdiscover"
+        android:text="发送数据" />
+
+    <Button
+        android:id="@+id/stopconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopdiscover"
+        android:text="停止连接" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopconnect" />
+</RelativeLayout>

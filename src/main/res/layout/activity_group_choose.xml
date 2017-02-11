@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    style="@style/current_skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ramo.view.TopBar
+        style="@style/topbar_style"
+        topbar:BG="@android:color/transparent"
+        topbar:leftBG="@drawable/topbar_left_bg">
+
+    </com.ramo.view.TopBar>
+
+    <TextView
+        android:id="@+id/group_choose_state"
+        style="@style/wrapAndWhite"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/group_ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ramo.view.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sidebar_head_superman" />
+
+                <TextView
+                    android:id="@+id/group_tv_name1"
+                    style="@style/wrapAndWhite"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@id/group_ll1"
+                android:orientation="vertical">
+
+                <com.ramo.view.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sidebar_head_huluwa" />
+
+                <TextView
+                    android:id="@+id/group_tv_name2"
+                    style="@style/wrapAndWhite"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_ll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@id/group_ll2"
+                android:orientation="vertical">
+
+                <com.ramo.view.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sidebar_head_shejing" />
+
+                <TextView
+                    android:id="@+id/group_tv_name3"
+                    style="@style/wrapAndWhite"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/arrow_rotate_left" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/arrow_rotate_left2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/arrow_rotate_left3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/arrow_rotate_right" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/arrow_rotate_right2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/arrow_rotate_right3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.ramo.view.CircleImageView
+            android:id="@+id/group_userhead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/sidebar_head_juren" />
+
+        <TextView
+            android:id="@+id/group_my_name"
+            style="@style/wrapAndWhite"
+            android:text="connect_my_name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/group_join_btn"
+            style="@style/wrapAndWhite"
+            android:layout_height="35dp"
+            android:background="@drawable/main_topbar_tv_shape_white"
+            android:text="加入群组" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/wrapAndWhite"
+        android:layout_marginTop="8dp"
+        android:text="提示：加入群组后，发送文件将被群组成员共享"
+        android:textSize="11sp" />
+</LinearLayout>
