@@ -31,9 +31,15 @@ A »ú¸´ÖÆÎÄ×Ö ¡ú »»µ½ B »ú¡ú Õ³ÌùÊ¹ÓÃ¡£  Äã¿ÉÒÔ¿´µ½£¬Ê¹ÓÃLightningÄãËùĞèÒª×öµÄ²Ù×
 6.	·¢ËÍÎÄ¼ş£¬ÎÄ¼şÖ§³ÖÍ¼Æ¬ĞÎÊ½»òÁĞ±íĞÎÊ½Õ¹Ê¾¡£Ñ¡ºÃºó£¬¿Éµã»÷ÒÑÑ¡°´Å¥£¬¶Ô´ı·¢ËÍÎÄ¼ş½øĞĞ¸ü¸Ä£¬È·ÈÏÎŞÎóºó£¬µã»÷·¢ËÍ¼´¿É¡£    
   
     
+![](https://github.com/feelschaotic/lightning/blob/master/video/lightning_android.gif)    
+
+![](https://github.com/feelschaotic/lightning/blob/master/video/wireless_printer.gif)    
+
 ![](https://github.com/feelschaotic/lightning/blob/master/video/sound_wave_transmission.gif)  
 
-![](https://github.com/feelschaotic/lightning/blob/master/video/sound_wave_transmission1.gif)	  
+  
+![](https://github.com/feelschaotic/lightning/blob/master/video/sound_wave_transmission1.gif)  
+  
 	    
 		
 ĞÔÄÜ²âÊÔ£º
